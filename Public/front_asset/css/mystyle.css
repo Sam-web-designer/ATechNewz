@@ -1,0 +1,233 @@
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 110; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.78); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.load{
+       display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        z-index: 99999999999;
+        background: rgba(0, 0, 0, 0.52);
+        visibility: collapse;
+    }
+.loader {
+   margin-top: 50vh;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+}
+.main-menu .active {
+border-bottom: 3px solid #4bb5ef;
+padding-bottom: 5px;
+border-radius: 5px;
+}
+.res-menu .active {
+color: #4bb5ef;
+}
+.friend-name ins{
+  background: none;
+}
+#if-login{
+  margin: 3px 6px;
+  padding: 7px 14px;
+  background: #088dcd;
+  color: white;
+  border-radius: 10px;
+}
+
+.comm a{
+  color: #3498db;
+}
+.comment-reply a {
+  color: #3498db;
+}
+.open-user-comment a {
+  color: #3498db;
+}
+
+
+#team .team-title {
+	margin-top: 7%;
+}
+#team .team-title h1 {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px;
+}
+#team .team-title h1::before, #team .team-title h1::after {
+	content: '';
+	width: 50px;
+	height: 3px;
+	background-color: #3498db;
+	display: inline-block;
+	margin: 10px -10px 10px -2px;
+}
+#tean .team-title p {
+	letter-spacing: 0.6px;
+	font-size: 15px;
+	margin-bottom: 7%;
+}
+#team  .card {
+	position: relative;
+}
+#team .card .social {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	bottom: 70px;
+	background: rgba(255, 255, 255, 0.70);
+	padding: 10px;
+	opacity: 0;
+	transition: 0.5s;
+}
+#team .card .social a {
+	padding-left: 20px;
+	font-size: 19px;
+	color: #222222;
+}
+#team .card .social a:hover {
+	color: #3498db;
+}
+#team .card:hover .social {
+	opacity: 1;
+}
+#team .card .team-img-title h2{
+	font-size: 21px;
+	font-weight: bold;
+}
+#team .card .team-img-title p {
+	font-size: 15px;
+}
+#team .team-box {
+  box-shadow: 30px 40px 30px 15px rgba(0, 0, 0, 0.17);
+}
+      /*contact*/
+      #contact {
+      margin-bottom: 5%;
+    }
+    #contact .contact-title {
+      margin-top: 7%;
+      margin-bottom: 4%;
+    }
+    #contact .contact-title h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    #contact .contact-title h1::before, #contact .contact-title h1::after {
+      content: '';
+      width: 50px;
+      height: 2px;
+      display: inline-block;
+      background-color: #3498db;
+      margin: 10px -7px 10px -8px;
+    }
+    #contact .col-md-12 a i {
+      margin-left: 20px;
+      margin-bottom: 30px;
+      border-radius: 50px;
+      border: 2px solid;
+      width: 50px;
+      height: 50px;
+      padding: 16px;
+    }
+    #contact .col-md-12 a i:hover {
+      background-color: #3498db;
+      color: white;
+      transition: 0.6s;
+    }
+    .footer-about{
+      padding: 10px;
+    }
+
+    ins{
+      background: none;
+    }
